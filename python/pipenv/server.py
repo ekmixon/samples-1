@@ -18,6 +18,6 @@ def execute():
 @app.route('/versions')
 def versions():
     version = gunicorn.__version__
-    return "Gunicorn version: " + version
+    return f"Gunicorn version: {version}"
 
 app.debug=True
